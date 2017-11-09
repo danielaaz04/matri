@@ -1,0 +1,285 @@
+@css {/*  CSS3 Clases - Luis Gago */}
+@import 'nib/vendor'
+@import 'nib/gradients'
+@import 'nib/overflow'
+@import 'nib/normalize'
+@import 'nib/flex'
+vendor-prefixes = o ms moz webkit
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  ms-border-radius arguments
+  o-border-radius arguments
+  border-radius arguments
+appearance()
+  -webkit-appearance arguments
+  -moz-appearance arguments
+  ms-appearance arguments
+  o-appearance arguments
+  appearance arguments
+box-shadow()
+  -webkit-box-shadow arguments
+  -moz-box-shadow arguments
+  ms-box-shadow arguments
+  o-box-shadow arguments
+  box-shadow arguments
+transform()
+  -webkit-transform arguments
+  -moz-transform arguments
+  ms-transform arguments
+  o-transform arguments
+  transform arguments
+transition()
+  -webkit-transition arguments
+  -moz-transition arguments
+  ms-transition arguments
+  o-transition arguments
+  transition arguments
+flex()
+  -webkit-box-flex arguments
+  -moz-box-flex arguments
+  -webkit-flex arguments
+  -ms-flex arguments
+  o-flex arguments
+  flex arguments
+flexbox()
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+box-shadow()
+  -webkit-box-shadow arguments
+  -moz-box-shadow arguments
+  ms-box-shadow arguments
+  o-box-shadow arguments
+  box-shadow arguments
+zoom()
+  -ms-zoom arguments
+  -webkit-zoom arguments
+  zoom arguments
+background-size()
+  -webkit-background-size arguments
+  -moz-background-size arguments
+  ms-background-size arguments
+  o-background-size arguments
+  background-size arguments
+user-select()
+  -webkit-user-select arguments
+  -moz-user-select arguments
+  -ms-user-select arguments
+  user-select arguments
+box-sizing()
+  -webkit-box-sizing arguments
+  -moz-box-sizing arguments
+  -ms-box-sizing arguments
+  box-sizing arguments
+opacity(n)
+  opacity n
+  if support-for-ie
+    filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+*, *:after, *:before
+  box-sizing border-box
+  margin 0
+//@import 'fonts'
+body
+  font-size: 16px
+
+//Estructura
+.page
+  /*display: flex*/
+  border-radius: 10px
+  //background: linear-gradient(top, yellow, blue)
+h1
+  color #333
+//@import 'keyframes'
+//@import 'media'
+
+/*Home*/
+#home h1
+  font-family 'Caveat', cursive;
+  font-size 5em
+  color white
+#home h4
+  font-family 'Caveat', cursive;
+  font-size 2.5em
+#home
+  background-image url('images/portada.jpg')
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  background-color #E1F5A9
+  min-height 700px
+
+/*Hotel*/
+
+#hotel h1
+  font-family 'Caveat', cursive;
+  font-size 5em
+
+.hotel1
+  background-image: url('images/hotel1.jpg')
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  min-height 550px
+.hotel2
+  background-image: url('images/hotel2.jpg')
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  min-height 550px
+.precio h3, p
+  font-family 'Caveat', cursive;
+  font-size 1.5em
+.precio h2
+  font-family 'Caveat', cursive;
+  font-size 2em
+.precio li
+  list-style none
+  color #425A90
+  font-size 1.5em
+  font-family 'Caveat', cursive;
+.hotel3
+  background-image: url('images/hotel3.jpg')
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  min-height 550px
+.reservas h3
+  font-family 'Caveat', cursive;
+  font-size 2.5em
+.reservas li
+  font-family 'Caveat', cursive;
+  font-size 1.5em 
+.hotel4
+  background-image: url('images/hotel4.jpg')
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  min-height 550px
+.descargas h4
+  font-family 'Caveat', cursive;
+.bar
+  background-image: url('images/bar.jpg')
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  min-height 550px
+.text-justify
+  text-align justify
+#map
+  width 100%
+  height 400px
+
+/*Transporte*/
+#transporte h1
+  font-family 'Caveat', cursive;
+  font-size 4em
+.aeropuertos
+  background-image: url('images/aeropuerto.jpg')
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  min-height 550px
+.vuelos p
+  color grey
+.buses
+  background-image: url('images/bus.jpg')
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  min-height 550px
+.bus li
+  list-style-type none
+  text-decoration none
+  color grey
+  font-family 'Caveat', cursive;
+  font-size 1.5em
+.bus p 
+  color grey
+
+/*Fotos*/
+
+.fotos h3
+  font-family 'Caveat', cursive;
+  font-size 2em
+/*Footer*/
+.footer
+  background-color #DFC0BA
+  min-height 80px
+
+/*Padding*/
+
+.pb-3
+  padding-bottom 3%
+.pb-5
+  padding-bottom 5%
+.pb-7
+  padding-bottom 7%
+.pb-10
+  padding-bottom 10%
+
+.pl-3
+  padding-left 3%
+.pl-5
+  padding-left 5%
+.pl-7
+  padding-left 7%
+.pl-10
+  padding-left 10%
+
+.pt-2
+  padding-top 2%
+.pt-3
+  padding-top 3%
+.pt-5
+  padding-top 5%
+.pt-7
+  padding-top 7%
+.pt-10
+  padding-top 10%
+.pt-20
+  padding-top 20%
+
+/*Margin*/
+
+.mb-3
+  margin-bottom 3%
+.mb-5
+  margin-bottom 5%
+.mb-7
+  margin-bottom 7%
+.mb-10
+  margin-bottom 10%
+
+.ml-3
+  margin-left 3%
+.ml-5
+  margin-left 5%
+.ml-7
+  margin-left 7%
+.ml-10
+  margin-left 10%
+
+.mt-2
+  margin-top 2%
+.mt-3
+  margin-top 3%
+.mt-5
+  margin-top 5%
+.mt-7
+  margin-top 7%
+.mt-10
+  margin-top 10%
+.mg-auto
+  margin-left 10%
+  margin-right 10%
+  text-align justify
+
+/*Colores*/
+
+.text-white
+  color #ffffff
+.text-grey
+  color grey
