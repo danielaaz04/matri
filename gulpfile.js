@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 gulp.task('jade', function(){
   //, '!jade/componentes/base.jade'
   gulp.src(['jade/**/*.jade'])
-  .pipe(changed('www/', {extension: '.html'}))
+  .pipe(changed('docs/', {extension: '.html'}))
   .pipe(gulpif(global.isWatching, cached('jade')))
   .pipe(jadeInheritance({basedir: 'jade'}))
   .pipe(filter(function (file) {
@@ -24,7 +24,7 @@ gulp.task('jade', function(){
   }))
   .pipe(jade({pretty: true}))
   .on('error', console.log.bind(console))
-  .pipe(gulp.dest('www/'))
+  .pipe(gulp.dest('docs/'))
   .pipe(reload({stream: true}));
 });
 
@@ -40,7 +40,7 @@ gulp.task('stylus', function(){
     use: nib()
   }))
   .on('error', console.log.bind(console))
-  .pipe(gulp.dest('www/css'))
+  .pipe(gulp.dest('docs/css'))
   .pipe(reload({stream: true}));
 });
 
@@ -55,7 +55,7 @@ gulp.task('javascript', function(){
     wrap: false
   }))
   .on('error', console.log.bind(console))
-  .pipe(gulp.dest('www/js'))
+  .pipe(gulp.dest('docs/js'))
   .pipe(reload({stream: true}));
 });
 
@@ -69,7 +69,7 @@ gulp.task('browserSync', function(done){
     },*/
     //SERVER
     server: {
-      baseDir: "./www"
+      baseDir: "./docs"
     },
     notify: false,
     injectChanges: true,
